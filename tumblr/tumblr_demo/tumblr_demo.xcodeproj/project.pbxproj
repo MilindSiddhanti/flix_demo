@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DDE8F3A7214201DA00A90FC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE8F3A6214201DA00A90FC9 /* AppDelegate.swift */; };
+		DDE8F3AC214201DA00A90FC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDE8F3AA214201DA00A90FC9 /* Main.storyboard */; };
+		DDE8F3AE214201DA00A90FC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDE8F3AD214201DA00A90FC9 /* Assets.xcassets */; };
+		DDE8F3B1214201DA00A90FC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDE8F3AF214201DA00A90FC9 /* LaunchScreen.storyboard */; };
+		DDE8F3BC214201DA00A90FC9 /* tumblr_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE8F3BB214201DA00A90FC9 /* tumblr_demoTests.swift */; };
+		DDE8F3C7214201DA00A90FC9 /* tumblr_demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE8F3C6214201DA00A90FC9 /* tumblr_demoUITests.swift */; };
+		DDE8F3D52142101000A90FC9 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE8F3D42142101000A90FC9 /* PhotosViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDE8F3B8214201DA00A90FC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDE8F39B214201DA00A90FC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDE8F3A2214201DA00A90FC9;
+			remoteInfo = tumblr_demo;
+		};
+		DDE8F3C3214201DA00A90FC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDE8F39B214201DA00A90FC9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDE8F3A2214201DA00A90FC9;
+			remoteInfo = tumblr_demo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DDE8F3A3214201DA00A90FC9 /* tumblr_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tumblr_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDE8F3A6214201DA00A90FC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DDE8F3AB214201DA00A90FC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DDE8F3AD214201DA00A90FC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DDE8F3B0214201DA00A90FC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DDE8F3B2214201DA00A90FC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDE8F3B7214201DA00A90FC9 /* tumblr_demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tumblr_demoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDE8F3BB214201DA00A90FC9 /* tumblr_demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tumblr_demoTests.swift; sourceTree = "<group>"; };
+		DDE8F3BD214201DA00A90FC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDE8F3C2214201DA00A90FC9 /* tumblr_demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tumblr_demoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDE8F3C6214201DA00A90FC9 /* tumblr_demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tumblr_demoUITests.swift; sourceTree = "<group>"; };
+		DDE8F3C8214201DB00A90FC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDE8F3D42142101000A90FC9 /* PhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDE8F3A0214201DA00A90FC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDE8F3B4214201DA00A90FC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDE8F3BF214201DA00A90FC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDE8F39A214201DA00A90FC9 = {
+			isa = PBXGroup;
+			children = (
+				DDE8F3A5214201DA00A90FC9 /* tumblr_demo */,
+				DDE8F3BA214201DA00A90FC9 /* tumblr_demoTests */,
+				DDE8F3C5214201DA00A90FC9 /* tumblr_demoUITests */,
+				DDE8F3A4214201DA00A90FC9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDE8F3A4214201DA00A90FC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDE8F3A3214201DA00A90FC9 /* tumblr_demo.app */,
+				DDE8F3B7214201DA00A90FC9 /* tumblr_demoTests.xctest */,
+				DDE8F3C2214201DA00A90FC9 /* tumblr_demoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDE8F3A5214201DA00A90FC9 /* tumblr_demo */ = {
+			isa = PBXGroup;
+			children = (
+				DDE8F3A6214201DA00A90FC9 /* AppDelegate.swift */,
+				DDE8F3AA214201DA00A90FC9 /* Main.storyboard */,
+				DDE8F3AD214201DA00A90FC9 /* Assets.xcassets */,
+				DDE8F3AF214201DA00A90FC9 /* LaunchScreen.storyboard */,
+				DDE8F3B2214201DA00A90FC9 /* Info.plist */,
+				DDE8F3D42142101000A90FC9 /* PhotosViewController.swift */,
+			);
+			path = tumblr_demo;
+			sourceTree = "<group>";
+		};
+		DDE8F3BA214201DA00A90FC9 /* tumblr_demoTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDE8F3BB214201DA00A90FC9 /* tumblr_demoTests.swift */,
+				DDE8F3BD214201DA00A90FC9 /* Info.plist */,
+			);
+			path = tumblr_demoTests;
+			sourceTree = "<group>";
+		};
+		DDE8F3C5214201DA00A90FC9 /* tumblr_demoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DDE8F3C6214201DA00A90FC9 /* tumblr_demoUITests.swift */,
+				DDE8F3C8214201DB00A90FC9 /* Info.plist */,
+			);
+			path = tumblr_demoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDE8F3A2214201DA00A90FC9 /* tumblr_demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDE8F3CB214201DB00A90FC9 /* Build configuration list for PBXNativeTarget "tumblr_demo" */;
+			buildPhases = (
+				DDE8F39F214201DA00A90FC9 /* Sources */,
+				DDE8F3A0214201DA00A90FC9 /* Frameworks */,
+				DDE8F3A1214201DA00A90FC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tumblr_demo;
+			productName = tumblr_demo;
+			productReference = DDE8F3A3214201DA00A90FC9 /* tumblr_demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DDE8F3B6214201DA00A90FC9 /* tumblr_demoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDE8F3CE214201DB00A90FC9 /* Build configuration list for PBXNativeTarget "tumblr_demoTests" */;
+			buildPhases = (
+				DDE8F3B3214201DA00A90FC9 /* Sources */,
+				DDE8F3B4214201DA00A90FC9 /* Frameworks */,
+				DDE8F3B5214201DA00A90FC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDE8F3B9214201DA00A90FC9 /* PBXTargetDependency */,
+			);
+			name = tumblr_demoTests;
+			productName = tumblr_demoTests;
+			productReference = DDE8F3B7214201DA00A90FC9 /* tumblr_demoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DDE8F3C1214201DA00A90FC9 /* tumblr_demoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDE8F3D1214201DB00A90FC9 /* Build configuration list for PBXNativeTarget "tumblr_demoUITests" */;
+			buildPhases = (
+				DDE8F3BE214201DA00A90FC9 /* Sources */,
+				DDE8F3BF214201DA00A90FC9 /* Frameworks */,
+				DDE8F3C0214201DA00A90FC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDE8F3C4214201DA00A90FC9 /* PBXTargetDependency */,
+			);
+			name = tumblr_demoUITests;
+			productName = tumblr_demoUITests;
+			productReference = DDE8F3C2214201DA00A90FC9 /* tumblr_demoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDE8F39B214201DA00A90FC9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Milind Siddhanti";
+				TargetAttributes = {
+					DDE8F3A2214201DA00A90FC9 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					DDE8F3B6214201DA00A90FC9 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = DDE8F3A2214201DA00A90FC9;
+					};
+					DDE8F3C1214201DA00A90FC9 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = DDE8F3A2214201DA00A90FC9;
+					};
+				};
+			};
+			buildConfigurationList = DDE8F39E214201DA00A90FC9 /* Build configuration list for PBXProject "tumblr_demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DDE8F39A214201DA00A90FC9;
+			productRefGroup = DDE8F3A4214201DA00A90FC9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDE8F3A2214201DA00A90FC9 /* tumblr_demo */,
+				DDE8F3B6214201DA00A90FC9 /* tumblr_demoTests */,
+				DDE8F3C1214201DA00A90FC9 /* tumblr_demoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDE8F3A1214201DA00A90FC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDE8F3B1214201DA00A90FC9 /* LaunchScreen.storyboard in Resources */,
+				DDE8F3AE214201DA00A90FC9 /* Assets.xcassets in Resources */,
+				DDE8F3AC214201DA00A90FC9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDE8F3B5214201DA00A90FC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDE8F3C0214201DA00A90FC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDE8F39F214201DA00A90FC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDE8F3A7214201DA00A90FC9 /* AppDelegate.swift in Sources */,
+				DDE8F3D52142101000A90FC9 /* PhotosViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDE8F3B3214201DA00A90FC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDE8F3BC214201DA00A90FC9 /* tumblr_demoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDE8F3BE214201DA00A90FC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDE8F3C7214201DA00A90FC9 /* tumblr_demoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DDE8F3B9214201DA00A90FC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDE8F3A2214201DA00A90FC9 /* tumblr_demo */;
+			targetProxy = DDE8F3B8214201DA00A90FC9 /* PBXContainerItemProxy */;
+		};
+		DDE8F3C4214201DA00A90FC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDE8F3A2214201DA00A90FC9 /* tumblr_demo */;
+			targetProxy = DDE8F3C3214201DA00A90FC9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DDE8F3AA214201DA00A90FC9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDE8F3AB214201DA00A90FC9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DDE8F3AF214201DA00A90FC9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDE8F3B0214201DA00A90FC9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDE8F3C9214201DB00A90FC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DDE8F3CA214201DB00A90FC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDE8F3CC214201DB00A90FC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = tumblr_demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.tumblr-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DDE8F3CD214201DB00A90FC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = tumblr_demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.tumblr-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DDE8F3CF214201DB00A90FC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = tumblr_demoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.tumblr-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tumblr_demo.app/tumblr_demo";
+			};
+			name = Debug;
+		};
+		DDE8F3D0214201DB00A90FC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = tumblr_demoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.tumblr-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tumblr_demo.app/tumblr_demo";
+			};
+			name = Release;
+		};
+		DDE8F3D2214201DB00A90FC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = tumblr_demoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.tumblr-demoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = tumblr_demo;
+			};
+			name = Debug;
+		};
+		DDE8F3D3214201DB00A90FC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = tumblr_demoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.codepath.tumblr-demoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = tumblr_demo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDE8F39E214201DA00A90FC9 /* Build configuration list for PBXProject "tumblr_demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDE8F3C9214201DB00A90FC9 /* Debug */,
+				DDE8F3CA214201DB00A90FC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDE8F3CB214201DB00A90FC9 /* Build configuration list for PBXNativeTarget "tumblr_demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDE8F3CC214201DB00A90FC9 /* Debug */,
+				DDE8F3CD214201DB00A90FC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDE8F3CE214201DB00A90FC9 /* Build configuration list for PBXNativeTarget "tumblr_demoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDE8F3CF214201DB00A90FC9 /* Debug */,
+				DDE8F3D0214201DB00A90FC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDE8F3D1214201DB00A90FC9 /* Build configuration list for PBXNativeTarget "tumblr_demoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDE8F3D2214201DB00A90FC9 /* Debug */,
+				DDE8F3D3214201DB00A90FC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDE8F39B214201DA00A90FC9 /* Project object */;
+}
