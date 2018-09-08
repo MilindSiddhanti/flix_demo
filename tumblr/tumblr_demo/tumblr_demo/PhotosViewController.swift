@@ -9,6 +9,8 @@
 import UIKit
 
 class PhotosViewController: UIViewController {
+    
+    var posts: [[String: Any]] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,8 +31,8 @@ class PhotosViewController: UIViewController {
                 print(error.localizedDescription)
             } else if let data = data {
                 let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [String : Any]
-                let responses = dataDictionary["response"] as! [[String : Any]]
-                print(responses)
+                let responseDictionary = dataDictionary["response"] as! [String : Any]
+                self.posts = responseDictionary["posts"] as! [[String : Any]]
             }
         }
         task.resume()
