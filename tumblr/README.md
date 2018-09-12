@@ -18,6 +18,13 @@ Please list two areas of the assignment you'd like to **discuss further with you
 1. The UI/UX role in improving the look and feel of the App
 2. Implementing more options in the App of the use to use
 
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='https://github.com/MilindSiddhanti/flix_demo/blob/master/tumblr/tumblr_demo/tumblr_gif.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
