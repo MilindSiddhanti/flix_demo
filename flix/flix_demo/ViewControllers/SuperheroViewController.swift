@@ -65,6 +65,15 @@ class SuperheroViewController: UIViewController, UICollectionViewDataSource {
         task.resume()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UICollectionViewCell
+        if let indexpath = collectionView.indexPath(for: cell){
+            let movie = movies[indexpath.row]
+            let detailViewSuperheroController = segue.destination as! DetailSuperheroViewController
+            detailViewSuperheroController.movie = movie
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
