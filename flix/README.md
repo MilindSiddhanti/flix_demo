@@ -16,6 +16,10 @@ The following **required** user stories are complete:
 - [x] User can tap a tab bar button to view a grid layout of Movie Posters using a CollectionView (+5pts)
 - [x] User can tap a poster in the collection view to see a detail screen of that movie (+3pts)
 
+Additional
+- [x] User can "Pull to refresh" the movie collection list (+2pt)
+
+
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
 1.
@@ -26,6 +30,12 @@ Please list two areas of the assignment you'd like to **discuss further with you
 Here's a walkthrough of implemented user stories:
 
 <img src='https://github.com/MilindSiddhanti/flix_demo/blob/master/flix/flix_gif.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
+Here's a walkthrough of implemented user stories:
+
+<img src='https://github.com/MilindSiddhanti/iOSDevelopment/blob/master/flix/flix_gif_detail.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
