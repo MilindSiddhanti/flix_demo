@@ -10,6 +10,7 @@
 		53DE210FBA325B0488313DE0 /* Pods_tumblr_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC1D8C0EAF28C0023F2334D7 /* Pods_tumblr_demo.framework */; };
 		77FBDF0F79DB1198E812CAC3 /* Pods_tumblr_demoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2C9732B70A0068EA070F654 /* Pods_tumblr_demoTests.framework */; };
 		BC0EEFEFF03B8049F758F637 /* Pods_tumblr_demoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79EAF71EC5F3327D9D576F1F /* Pods_tumblr_demoUITests.framework */; };
+		DD0D645621507FB100AFDF66 /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0D645521507FB100AFDF66 /* PostDetailViewController.swift */; };
 		DDE8F3A7214201DA00A90FC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE8F3A6214201DA00A90FC9 /* AppDelegate.swift */; };
 		DDE8F3AC214201DA00A90FC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDE8F3AA214201DA00A90FC9 /* Main.storyboard */; };
 		DDE8F3AE214201DA00A90FC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDE8F3AD214201DA00A90FC9 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		B2C9732B70A0068EA070F654 /* Pods_tumblr_demoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tumblr_demoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4874F671021039A1D1228C4 /* Pods-tumblr_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tumblr_demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-tumblr_demo/Pods-tumblr_demo.release.xcconfig"; sourceTree = "<group>"; };
 		DC1D8C0EAF28C0023F2334D7 /* Pods_tumblr_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tumblr_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD0D645521507FB100AFDF66 /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
 		DDE8F3A3214201DA00A90FC9 /* tumblr_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tumblr_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDE8F3A6214201DA00A90FC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDE8F3AB214201DA00A90FC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -101,6 +103,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DD0D645221507F6B00AFDF66 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DDE8F3D42142101000A90FC9 /* PhotosViewController.swift */,
+				DD0D645521507FB100AFDF66 /* PostDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DD0D645421507F8100AFDF66 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DDE8F3D82147407400A90FC9 /* PostCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		DDE8F39A214201DA00A90FC9 = {
 			isa = PBXGroup;
 			children = (
@@ -126,13 +145,13 @@
 		DDE8F3A5214201DA00A90FC9 /* tumblr_demo */ = {
 			isa = PBXGroup;
 			children = (
+				DD0D645421507F8100AFDF66 /* Views */,
+				DD0D645221507F6B00AFDF66 /* ViewControllers */,
 				DDE8F3A6214201DA00A90FC9 /* AppDelegate.swift */,
 				DDE8F3AA214201DA00A90FC9 /* Main.storyboard */,
 				DDE8F3AD214201DA00A90FC9 /* Assets.xcassets */,
 				DDE8F3AF214201DA00A90FC9 /* LaunchScreen.storyboard */,
 				DDE8F3B2214201DA00A90FC9 /* Info.plist */,
-				DDE8F3D42142101000A90FC9 /* PhotosViewController.swift */,
-				DDE8F3D82147407400A90FC9 /* PostCell.swift */,
 			);
 			path = tumblr_demo;
 			sourceTree = "<group>";
@@ -304,15 +323,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-tumblr_demoTests-checkManifestLockResult.txt",
 			);
@@ -326,16 +341,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-tumblr_demo/Pods-tumblr_demo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
@@ -350,15 +361,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-tumblr_demoUITests-checkManifestLockResult.txt",
 			);
@@ -372,15 +379,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-tumblr_demo-checkManifestLockResult.txt",
 			);
@@ -397,6 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDE8F3A7214201DA00A90FC9 /* AppDelegate.swift in Sources */,
+				DD0D645621507FB100AFDF66 /* PostDetailViewController.swift in Sources */,
 				DDE8F3D52142101000A90FC9 /* PhotosViewController.swift in Sources */,
 				DDE8F3D92147407400A90FC9 /* PostCell.swift in Sources */,
 			);

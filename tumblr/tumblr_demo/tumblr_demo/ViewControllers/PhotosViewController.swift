@@ -13,7 +13,7 @@ class PhotosViewController: UIViewController, UITableViewDataSource {
     
     var posts: [[String: Any]] = []
     var refreshControl: UIRefreshControl!
-
+    
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,10 +25,10 @@ class PhotosViewController: UIViewController, UITableViewDataSource {
         
         tableView.dataSource = self
         fetchPhotos()
-
+        
         // Do any additional setup after loading the view.
     }
-
+    
     @objc func pullToRefresh(_ refreshControl: UIRefreshControl){
         
         fetchPhotos()
@@ -76,10 +76,21 @@ class PhotosViewController: UIViewController, UITableViewDataSource {
         
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cell = sender as! UITableViewCell
+        if let indexPath = tableView.indexPath(for: cell){
+            let photo = photos[0]
+            let postDetailViewController = segue.destination as! PostDetailViewController
+            postDetailViewController.posts = photo
+            
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
 }
