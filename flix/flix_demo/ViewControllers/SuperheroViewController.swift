@@ -13,10 +13,15 @@ class SuperheroViewController: UIViewController, UICollectionViewDataSource {
     @IBOutlet weak var collectionView: UICollectionView!
     
     var movies: [[String: Any]] = []
+    var refreshControl: UIRefreshControl!
     
     override func viewDidLoad() {
         
         collectionView.dataSource = self
+        
+        refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(SuperheroViewController.didPullToRefresh(_:)), for: .valueChanged)
+        collectionView.insertSubview(refreshControl, at: 0)
         
         let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
         layout.minimumInteritemSpacing = 5
@@ -27,6 +32,10 @@ class SuperheroViewController: UIViewController, UICollectionViewDataSource {
         layout.itemSize = CGSize(width: width, height: width * 3 / 2)
         
         super.viewDidLoad()
+        fetchMovies()
+    }
+    
+    @objc func didPullToRefresh(_ refreshControl: UIRefreshControl){
         fetchMovies()
     }
     
@@ -58,7 +67,7 @@ class SuperheroViewController: UIViewController, UICollectionViewDataSource {
                 let movies = dataDictionary["results"] as! [[String : Any]]
                 self.movies = movies
                 self.collectionView.reloadData()
-                // self.refreshControl.endRefreshing()
+                self.refreshControl.endRefreshing()
                 
             }
         }
